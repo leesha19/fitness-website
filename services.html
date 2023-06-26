@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.min.css">
+  <title>Get Fit Mantra| My Service</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <img style="height:100px; width: 200px;" src="images/logo2.png" alt="" class="logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Our service</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="diet-plan.html">Diet Recepies</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <!-- <li><a href="blog.html" class="dropdown-link"> Blog
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <ul>
+            <li><a href="blog.html">Blog Default</a></li>
+            <li><a href="blog-single.html">Blog Single</a></i>
+          </ul>
+        </li> -->
+      <!-- <li><a href="#" class="dropdown-link"> Features
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <ul> -->
+      <!-- <li><a href="diet-plan.html">Diet Plan</a></li> -->
+      <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
+      <!-- <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Style guide</a></li>
+          </ul>
+        </li> -->
+      <li><a href="contact.html">Contact us</a></li>
+      <!-- <a href="#" class="btn btn-grey">Get started</a> -->
+    </ul>
+  </nav>
+
+  <!-- Sidenav -->
+  <div id="sidenav">
+    <div class="icon" onclick="openNav()">
+      <p>Menu</p>
+
+    </div>
+    <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&#9776;</a>
+
+    <div id="mySidenav" class="sidenav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">My service</a></li>
+        <li><a href="about.html">About me</a></li>
+        <span onclick="openList()" class="closeplus">+</span>
+        <li onclick="closeList()">
+          <a href="javascript:void(0)"> Blog
+            <i class="fas fa-angle-down"></i>
+          </a>
+
+          <ul class="openlist">
+            <li><a href="blog.html">Blog Default</a></li>
+            <li class="border-none"><a href="blog-single.html">Blog Single</a></i>
+          </ul>
+        </li>
+
+        <span onclick="openList2()" class="closeplus">+</span>
+        <li onclick="closeList2()"><a href="javascript:void(0)"> Features
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <ul class="openlist2">
+            <li><a href="diet-plan.html">Diet Plan</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li class="border-none"><a href="faq.html">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="border-none"><a href="contact.html">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Header: Showcase -->
+  <section id="showcase">
+    <div class="container">
+      <div class="showcase-content">
+        <div class="box">
+          <h2>My Services</h2>
+          <span>
+            <a href="index.html">Home</a> /
+            My Services
+          </span>
+        </div>
+        <div class="box">
+          <p><em>“Let's work together to help you attain the lifelong skills you need to <br> make a lasting impact on
+              your
+              health”</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section: Services -->
+  <section id="services" class="py-4">
+    <div class="container">
+      <div class="services-content">
+        <div class="box">
+          <ul class="collection">
+            <li  class="active"><a rel="preload" href="#program1" onclick="toggleContent('program1')">Gut health/Detox program</a></li>
+            <li><a rel="preload" href="#program2" onclick="toggleContent('program2')" > Inch loss/Weightloss<br>Program</a></li>
+            <li><a rel="preload" href="#program3" onclick="toggleContent('program3')">3- day detox program</a></li>
+            <li><a rel="preload" href="#program4" onclick="toggleContent('program4')">Wellness Program </a></li>
+            <li><a rel="preload" href="#program5" onclick="toggleContent('program5')">Women's Health Program</a></li>
+            <li><a rel="preload" href="#program6" onclick="toggleContent('program6')">Skincare Therapy</a></li>
+            <li><a rel="preload" href="#program7" onclick="toggleContent('program7')">Collagen Therapy</a></li>
+          </ul>
+        </div>
+        <div id="program1-content" class="box content">
+
+          <div class="text">
+            <h2>Gut health/Detox program</h2>
+            <p class="mb-2"><strong>“- The crux of the program is gut health.
+                We eat specific foods carefully chosen to rest and repair the lining of your gut,
+                and we support the body with top quality nutrition for sustainable health.</strong></p>
+
+            <p class="mb-2">Our Gut Health & Weight Loss Program is an easy to follow 3-step process that will
+              focus on a lifestyle adjustment towards healthier living for the rest of your life. We provide nutritional
+              & lifestyle coaching along with support to empower people to achieve their health goals.
+              <br>
+              Our mission is to promote and enhance gut health through a comprehensive and evidence-based program. We
+              recognize the crucial role that the gut microbiome plays
+              in maintaining overall health and well-being, and our goal is to empower individuals to optimize their gut
+              health for a better quality of life.
+              <br>Our gut health program is designed to educate, support, and provide practical tools to individuals
+              seeking to improve their digestive health. We believe that by focusing on the gut,
+              we can address a wide range of health issues and promote overall wellness.</br>
+            </p>
+
+
+            </p>
+
+
+            <div class="divider mb-2"></div>
+
+            <h3>Key Features</h3>
+            <ul class="dots mb-2">
+              <li>Education <p>We aim to provide clear and accurate information about the gut microbiome, its functions,
+                  and its impact on various aspects of health. We believe that knowledge is empowering and that informed
+                  individuals can make better choices for their gut health.</p>
+              </li>
+              <li>Holistic Approach <p>We recognize that gut health is influenced by multiple factors, including diet,
+                  lifestyle, stress, medications, and environmental factors.
+                  Our program takes a holistic approach, addressing these various aspects to optimize gut health
+                  comprehensively.
+                </p>
+              </li>
+              <li>Personalized Guidance <p>We understand that each individual's gut health is unique, and a
+                  one-size-fits-all approach may not be effective. Our program offers personalized
+                  guidance based on an individual's specific needs, health goals, and any existing health conditions.
+                </p>
+              </li>
+              <li>Evidence-based Strategies <p>We are committed to basing our gut health program on scientific evidence
+                  and the latest research in the field. We integrate evidence-based strategies,
+                  including dietary recommendations, lifestyle modifications, probiotics, prebiotics, and other targeted
+                  interventions.</p>
+              </li>
+              <li>Support and Community <p>We believe in the power of support and community in achieving optimal gut
+                  health. Our program provides a supportive environment where individuals can connect,
+                  share experiences, and seek guidance from experts and fellow participants.
+                </p>
+              </li>
+              <li>Long-term Sustainability <p>Our aim is to equip individuals with the knowledge and tools necessary to
+                  sustain long-term gut health. We focus on implementing realistic and achievable changes
+                  that can be incorporated into everyday life, promoting lasting benefits.
+                </p>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+        <div id="program2-content" class="box content">
+
+          <div class="text">
+            <h2>Inch loss/Weightloss Program</h2>
+            <p class="mb-2"><strong>Are you ready to embark on a transformative journey towards a leaner, healthier you?
+                Look no further than this
+                ultimate system designed to ignite your body's fat-burning furnace and sculpt your dream
+                physique.</strong></p>
+
+            <p class="mb-2">Our cutting-edge formula is meticulously crafted to maximize your body's natural ability to
+              shed unwanted pounds.
+              It combines scientifically backed ingredients like CLA (Conjugated Linoleic Acid), Collagen, and plant
+              extracts to supercharge your metabolism and support lean muscle growth.
+              <br>
+
+            </p>
+
+            <div class="divider mb-2"></div>
+
+            <h3>Key Features</h3>
+            <ul class="dots mb-2">
+              <li>Convenience and Versatility<p>We understand the demands of a busy lifestyle. That's why Our Program
+                  fits seamlessly into your routine.</p>
+              </li>
+              <li>Holistic Approach <p>Our Program is more than just a weight loss solution; it's a comprehensive system
+                  that promotes overall well-being. By supporting your metabolism, curbing cravings, and providing vital
+                  nutrients,
+                  Modere Trim empowers you to embrace a healthier lifestyle from the inside out.
+                </p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div id="program3-content" class="box content">
+
+          <div class="text">
+            <h2>3- day Detox program</h2>
+            <p class="mb-2"><strong>Recharge, Reset, Renew!</strong></p>
+
+            <p class="mb-2">Are you ready to give your body a fresh start? Our revitalizing program designed to recharge
+              your system, reset your habits,
+              and renew your well-being. Get ready to embark on a transformative journey in just three days!
+
+              <br>
+              Gentle Cleanse: Our scientifically formulated cleanse gently removes toxins and impurities from your body,
+              supporting your natural
+              detoxification processes. Feel refreshed as you eliminate built-up waste and restore balance to your
+              system.
+              <br>
+              This 3-day program serves as a kickstart to healthier habits. It helps you break free from unhealthy
+              patterns and jumpstarts your journey towards a balanced lifestyle. Use it as a catalyst for long-term
+              wellness.
+              <br>
+              It's time to press the refresh button and embrace a healthier, more vibrant you!
+            </p>
+
+
+
+
+
+            <div class="divider mb-2"></div>
+
+            <h3>Key Features</h3>
+            <ul class="dots mb-2">
+              <li>Increased Energy <p>Say goodbye to fatigue and hello to renewed energy levels! As you eliminate
+                  toxins,
+                  you'll experience a boost in vitality, leaving you feeling revitalized and ready to conquer your day.
+                </p>
+              </li>
+              <li>Improved Digestion <p>Reset your digestive system as you cleanse. Our 3-Day Detox helps optimize your
+                  gut health,
+                  supporting efficient digestion and nutrient absorption. Feel lighter and more comfortable in your own
+                  skin.
+                </p>
+              </li>
+              <li>Personalized Guidance <p>We understand that each individual's gut health is unique, and a
+                  one-size-fits-all approach may not be effective. Our program offers personalized
+                  guidance based on an individual's specific needs, health goals, and any existing health conditions.
+                </p>
+              </li>
+
+            </ul>
+
+
+          </div>
+        </div>
+        <div id="program4-content" class="box content">
+
+          <div class="text">
+            <h2>Gut health/Detox program</h2>
+            <p class="mb-2"><strong>“- The crux of the program is gut health.
+                We eat specific foods carefully chosen to rest and repair the lining of your gut,
+                and we support the body with top quality nutrition for sustainable health.</strong></p>
+
+            <p class="mb-2">Our Gut Health & Weight Loss Program is an easy to follow 3-step process that will
+              focus on a lifestyle adjustment towards healthier living for the rest of your life. We provide nutritional
+              & lifestyle coaching along with support to empower people to achieve their health goals.
+              <br>
+              Our mission is to promote and enhance gut health through a comprehensive and evidence-based program. We
+              recognize the crucial role that the gut microbiome plays
+              in maintaining overall health and well-being, and our goal is to empower individuals to optimize their gut
+              health for a better quality of life.
+              <br>Our gut health program is designed to educate, support, and provide practical tools to individuals
+              seeking to improve their digestive health. We believe that by focusing on the gut,
+              we can address a wide range of health issues and promote overall wellness.</br>
+            </p>
+
+
+            </p>
+
+
+            <div class="divider mb-2"></div>
+
+            <h3>Key Features</h3>
+            <ul class="dots mb-2">
+              <li>Education <p>We aim to provide clear and accurate information about the gut microbiome, its functions,
+                  and its impact on various aspects of health. We believe that knowledge is empowering and that informed
+                  individuals can make better choices for their gut health.</p>
+              </li>
+              <li>Holistic Approach <p>We recognize that gut health is influenced by multiple factors, including diet,
+                  lifestyle, stress, medications, and environmental factors.
+                  Our program takes a holistic approach, addressing these various aspects to optimize gut health
+                  comprehensively.
+                </p>
+              </li>
+              <li>Personalized Guidance <p>We understand that each individual's gut health is unique, and a
+                  one-size-fits-all approach may not be effective. Our program offers personalized
+                  guidance based on an individual's specific needs, health goals, and any existing health conditions.
+                </p>
+              </li>
+              <li>Evidence-based Strategies <p>We are committed to basing our gut health program on scientific evidence
+                  and the latest research in the field. We integrate evidence-based strategies,
+                  including dietary recommendations, lifestyle modifications, probiotics, prebiotics, and other targeted
+                  interventions.</p>
+              </li>
+              <li>Support and Community <p>We believe in the power of support and community in achieving optimal gut
+                  health. Our program provides a supportive environment where individuals can connect,
+                  share experiences, and seek guidance from experts and fellow participants.
+                </p>
+              </li>
+              <li>Long-term Sustainability <p>Our aim is to equip individuals with the knowledge and tools necessary to
+                  sustain long-term gut health. We focus on implementing realistic and achievable changes
+                  that can be incorporated into everyday life, promoting lasting benefits.
+                </p>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+        <div id="program5-content" class="box content">
+
+          <div class="text">
+            <h2>Women health program</h2>
+            <p class="mb-2"><strong>Elevate Your Women's Health with Modere: Embrace Radiant Wellness!</strong></p>
+
+            <p class="mb-2">Attention all phenomenal women: We are here to empower your journey towards vibrant,
+              holistic well-being.
+              Step into a world where you take charge of your health, radiate confidence, and celebrate your inner
+              strength. It's time to prioritize self-care,
+              nourish your body, and radiate with beauty and vitality. Elevate your health, celebrate your femininity,
+              and let us be your partner in embracing the
+              extraordinary woman you are.
+            </p>
+          </div>
+        </div>
+        <div id="program6-content" class="box content">
+
+          <div class="text">
+            <h2>Skin health program</h2>
+            <p class="mb-2"><strong>Unlock Your Radiant Beauty: Embrace Your Timeless Glow!</strong></p>
+
+            <p class="mb-2">Indulge in the luxurious world of Skincare and experience a transformation like no other.
+              Reveal your inner radiance as our exquisite products
+              unveil your timeless beauty. Get ready to elevate your skincare routine to new height. Our skincare
+              collection combines scientific innovation with nature's finest ingredients,
+              creating a harmonious fusion of beauty and effectiveness. From cutting-edge formulations to botanical
+              extracts, It delivers results that exceed expectations.
+
+              <br>
+              Say goodbye to fine lines, dullness, and uneven skin tone. Our Skincare Program offers targeted solutions
+              to address the signs of aging, helping you achieve a youthful, vibrant complexion. Rediscover your
+              confidence as you unveil a revitalized, age-defying glow.
+              <br>Rediscover the confidence that comes with a luminous complexion and let your skincare journey become
+              an act of self-love.. It's time to elevate your skincare routine and reveal the breathtaking beauty that
+              has always been within you.
+            </p>
+          </div>
+        </div>
+        <div id="program7-content" class="box content">
+
+          <div class="text">
+            <h2>Collagan Therapy program</h2>
+            <p class="mb-2"><strong>Ignite Your Beauty: Unveil Your Radiant Transformation!</strong></p>
+
+            <p class="mb-2">Experience the power of youth with Our Collagen, the secret to unlocking your natural
+              beauty.
+              Replenish your skin, revitalize your hair, and rejuvenate your body from within. Get ready to witness a
+              radiant transformation like never before!
+
+              <br>
+              Modere Collagen nourishes your body at the core, promoting healthy skin, luscious hair, and strong nails.
+              Let your inner radiance shine through as you embrace the transformative power of collagen.
+              <br>Turn back the hands of time and reduce the visible signs of aging. Modere Collagen supports
+              elasticity, plumps the skin, and diminishes the appearance of fine lines and wrinkles, revealing a
+              youthful, smooth complexion.</br>
+              <br>Collagen is not just for beauty; it supports joint health too! Collagen provides the building blocks
+              for healthy joints, reducing discomfort and supporting flexibility. Move with grace and embrace an active
+              lifestyle.
+              <br>
+              It is more than a beauty supplement; it's a holistic approach to well-being. As you nurture your body with
+              this essential protein, you'll experience a renewed sense of vitality and overall wellness.
+              <br>
+              Let your skin glow, your hair dazzle, and your confidence soar. It's time to ignite your beauty and
+              embrace a more vibrant, youthful you. Experience the power of Collagen today!
+            </p>
+
+
+            </p>
+          </div>
+          <div class="divider mb-2"></div>
+
+         <h3>Key Features</h3>
+         <ul class="dots mb-2">
+          <li>Education <p>We aim to provide clear and accurate information about the gut microbiome, its functions,
+              and its impact on various aspects of health. We believe that knowledge is empowering and that informed
+              individuals can make better choices for their gut health.</p>
+          </li>
+          <li>Holistic Approach <p>We recognize that gut health is influenced by multiple factors, including diet,
+              lifestyle, stress, medications, and environmental factors.
+              Our program takes a holistic approach, addressing these various aspects to optimize gut health
+              comprehensively.
+            </p>
+          </li>
+          <li>Personalized Guidance <p>We understand that each individual's gut health is unique, and a
+              one-size-fits-all approach may not be effective. Our program offers personalized
+              guidance based on an individual's specific needs, health goals, and any existing health conditions.
+            </p>
+          </li>
+          <li>Evidence-based Strategies <p>We are committed to basing our gut health program on scientific evidence and
+              the latest research in the field. We integrate evidence-based strategies,
+              including dietary recommendations, lifestyle modifications, probiotics, prebiotics, and other targeted
+              interventions.</p>
+          </li>
+          <li>Support and Community <p>We believe in the power of support and community in achieving optimal gut health.
+              Our program provides a supportive environment where individuals can connect,
+              share experiences, and seek guidance from experts and fellow participants.
+            </p>
+          </li>
+          <li>Long-term Sustainability <p>Our aim is to equip individuals with the knowledge and tools necessary to
+              sustain long-term gut health. We focus on implementing realistic and achievable changes
+              that can be incorporated into everyday life, promoting lasting benefits.
+            </p>
+          </li>
+         </ul>
+
+
+         </div>
+        </div>
+
+
+        
+       </div>
+     </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="info">
+          <h2>Contact Information</h2>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              2177 Shearwood Forest , NH 03801
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              +180-123-4567
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              info@dietcoach.com
+            </li>
+          </ul>
+          <div class="social-icons">
+            <ul>
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-google-plus"></i></li>
+              <li><i class="fab fa-pinterest"></i></li>
+              <li><i class="fab fa-linkedin"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">service</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="#">Diet plans</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h2>Contact Us</h2>
+          <form>
+            <div class="input-field">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="input-field">
+              <input type="email" placeholder="email">
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Phone">
+            </div>
+            <div class="input-field">
+              <textarea placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="subfooter text-center mt-4 mb-2">
+        <p>
+          © 2019 - The Nutrition Diet Coach. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

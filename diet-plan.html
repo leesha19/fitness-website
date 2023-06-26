@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.min.css">
+  <title>Get Fit Mantra| Diet Plan</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <img style="height:100px; width: 200px;" src="images/logo2.png" alt="" class="logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Our service</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="diet-plan.html">Diet Recepies</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <!-- <li><a href="blog.html" class="dropdown-link"> Blog
+          <i class="fas fa-angle-down"></i>
+        </a>
+        <ul>
+          <li><a href="blog.html">Blog Default</a></li>
+          <li><a href="blog-single.html">Blog Single</a></i>
+        </ul>
+      </li> -->
+      <!-- <li><a href="#" class="dropdown-link"> Features
+          <i class="fas fa-angle-down"></i>
+        </a>
+        <ul> -->
+          <!-- <li><a href="diet-plan.html">Diet Plan</a></li> -->
+          <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
+          <!-- <li><a href="faq.html">FAQ</a></li>
+          <li><a href="#">Style guide</a></li>
+        </ul>
+      </li> -->
+      <li><a href="contact.html">Contact us</a></li>
+      <!-- <a href="#" class="btn btn-grey">Get started</a> -->
+    </ul>
+  </nav>
+
+  <!-- Sidenav -->
+  <div id="sidenav">
+    <div class="icon" onclick="openNav()">
+      <p>Menu</p>
+
+    </div>
+    <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&#9776;</a>
+
+    <div id="mySidenav" class="sidenav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">My service</a></li>
+        <li><a href="about.html">About me</a></li>
+        <span onclick="openList()" class="closeplus">+</span>
+        <li onclick="closeList()">
+          <a href="javascript:void(0)"> Blog
+            <i class="fas fa-angle-down"></i>
+          </a>
+
+          <ul class="openlist">
+            <li><a href="blog.html">Blog Default</a></li>
+            <li class="border-none"><a href="blog-single.html">Blog Single</a></i>
+          </ul>
+        </li>
+
+        <span onclick="openList2()" class="closeplus">+</span>
+        <li onclick="closeList2()"><a href="javascript:void(0)"> Features
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <ul class="openlist2">
+            <li><a href="diet-plan.html">Diet Plan</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li class="border-none"><a href="faq.html">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="border-none"><a href="contact.html">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Header: Showcase -->
+  <section id="showcase">
+    <div class="container">
+      <div class="showcase-content">
+        <div class="box">
+          <h2>Diet Plan</h2>
+          <span>
+            <a href="index.html">Home</a> /
+            Diet Plan
+          </span>
+        </div>
+        <div class="box">
+          <p><em>Shop our selection of easy-to-follow diet and weight loss plans. Get started<br> today to lose weight
+              fast, improve your health and have more energy</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section: Latest diet tips -->
+  <section id="latest-tips" class="py-4">
+    <div class="container">
+      <div class="tips-content">
+        <div>
+        <!--1-->
+        <div class="box">
+          <div class="image-box mb-2">
+            <a href="blog-single.html" class="gallery">
+              <img src="images/post-img-small-1.jpg" alt="">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="box-content">
+            <a href="blog-single.html" class="link">Diet tips</a>
+            <span>12 JUNE, 2019</span>
+            <h4>GREEN SMOOTHIE TO GO</h4>
+            <p>Nam vitae aliquet metus semper vehicula juonecin dolor....</p>
+            <a href="blog-single.html" class="link">Read more</a>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="box">
+          <div class="image-box mb-2">
+            <a href="blog-single.html" class="gallery">
+              <img src="images/post-img-small-2.jpg" alt="">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="box-content">
+            <a href="blog-single.html" class="link">Weight Loss</a>
+            <span>15 JUNE, 2019</span>
+            <h4>INFLAMMATION FIGHTING FOODS</h4>
+            <p>Vitae aliquet metus semperveicula juonecin doloreer ornare....</p>
+            <a href="blog-single.html" class="link">Read more</a>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="box">
+          <div class="image-box mb-2">
+            <a href="blog-single.html" class="gallery">
+              <img src="images/post-img-small-3.jpg" alt="">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="box-content">
+            <a href="blog-single.html" class="link">Health Care</a>
+            <span>27 JUNE, 2019</span>
+            <h4>HABITS, HEALTH & FITNESS NEWS CATCH UP</h4>
+            <p>Aliquet metus semper vehiculase juonecin dolor sederate....</p>
+            <a href="blog-single.html" class="link">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- 4 -->
+        <div class="box">
+          <div class="image-box mb-2">
+            <a href="blog-single.html" class="gallery">
+              <img src="images/post-img-small-4.jpg" alt="">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="box-content">
+            <a href="blog-single.html" class="link">Health Care</a>
+            <span>28 JUNE, 2019</span>
+            <h4>DRINKING WATER DILUTES STOMACH ACID</h4>
+            <p>Juctus metuis acmetus pharetra efficitur velit neincidu...</p>
+            <a href="blog-single.html" class="link">Read more</a>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="box">
+          <div class="image-box mb-2">
+            <a href="blog-single.html" class="gallery">
+              <img src="images/post-img-small-5.jpg" alt="">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="box-content">
+            <a href="blog-single.html" class="link">Health Care</a>
+            <span>27 JUNE, 2019</span>
+            <h4>TOP 5 NATURAL THERAPIES TO FIGHT HPYLORI</h4>
+            <p>Vivamus qususcipit auguenon placerat urnurabitursed...</p>
+            <a href="blog-single.html" class="link">Read more</a>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="box">
+          <div class="image-box mb-2">
+            <a href="blog-single.html" class="gallery">
+              <img src="images/post-img-small-6.jpg" alt="">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="box-content">
+            <a href="blog-single.html" class="link">Health Care</a>
+            <span>27 JUNE, 2019</span>
+            <h4>ESSENTIAL OILS FOR FIXING THE GUT</h4>
+            <p>Morbi ut metus in magna luctus veneuis veli vehicula...</p>
+            <a href="blog-single.html" class="link">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- 7 -->
+        <div class="box">
+          <div class="image-box mb-2">
+            <a href="blog-single.html" class="gallery">
+              <img src="images/post-img-small-2.jpg" alt="">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="box-content">
+            <a href="blog-single.html" class="link">Weight Loss</a>
+            <span>15 JUNE, 2019</span>
+            <h4>INFLAMMATION FIGHTING FOODS</h4>
+            <p>Vitae aliquet metus semperveicula juonecin doloreer ornare....</p>
+            <a href="blog-single.html" class="link">Read more</a>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="box">
+          <div class="image-box mb-2">
+            <a href="blog-single.html" class="gallery">
+              <img src="images/post-img-small-4.jpg" alt="">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="box-content">
+            <a href="blog-single.html" class="link">Health Care</a>
+            <span>28 JUNE, 2019</span>
+            <h4>DRINKING WATER DILUTES STOMACH ACID</h4>
+            <p>Juctus metuis acmetus pharetra efficitur velit neincidu...</p>
+            <a href="blog-single.html" class="link">Read more</a>
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class="box">
+          <div class="image-box mb-2">
+            <a href="blog-single.html" class="gallery">
+              <img src="images/post-img-small-6.jpg" alt="">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="box-content">
+            <a href="blog-single.html" class="link">Health Care</a>
+            <span>27 JUNE, 2019</span>
+            <h4>ESSENTIAL OILS FOR FIXING THE GUT</h4>
+            <p>Morbi ut metus in magna luctus veneuis veli vehicula...</p>
+            <a href="blog-single.html" class="link">Read more</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: What's Plan -->
+  <section id="whats-plan" class="bg-light py-3">
+    <div class="container">
+      <div class="heading-title">
+        <h2>What should you cover</h2>
+        <p>Nunc porta volutpat lorctor arcu ligula sed aliquetdui sagittisa eneana dictumste.</p>
+      </div>
+
+      <div class="plan-content">
+        <!-- 1 -->
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-brain fa-3x text-success"></i>
+          </div>
+          <div class="text">
+            <h3>Mind Fit</h3>
+            <p>Duis dui eros tinciduntser nelaoreete phacursus one quis esorbi aliqam turpis libero iaculis finlacus.
+            </p>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-weight fa-3x text-success"></i>
+          </div>
+          <div class="text">
+            <h3>Body Fit</h3>
+            <p>Duis dui eros tinciduntser nelaoreete phacursus one quis esorbi aliqam turpis libero iaculis finlacus.
+            </p>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-utensils fa-3x text-success"></i>
+          </div>
+          <div class="text">
+            <h3>Nutrition Fit</h3>
+            <p>Duis dui eros tinciduntser nelaoreete phacursus one quis esorbi aliqam turpis libero iaculis finlacus.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Frequently Asked Questions -->
+  <section id="asked-question" class="py-3">
+    <div class="container">
+      <div class="heading-title">
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="asked-content">
+        <div class="box">
+          <h3>Q: How much do you charge for your services?</h3>
+          <p>Praesent tristique cursus felis eget bibendum ligula suscipit vitaeras imperdiet urna eget eros eleifend
+            lucivamus feugiat nunc non ligula efficitur sitamet mollis justo.</p>
+        </div>
+        <div class="box">
+          <h3>Q: Do i need to buy your recommended nutritional supplements?</h3>
+          <p>Lorem tristique cursus felis eget bibendum ligula suscipit vitaeras imperdiete.</p>
+        </div>
+        <div class="box">
+          <h3>Q: What is your cancellation policy?</h3>
+          <p>Praesent tristique cursus felis eget bibendum ligula suscipit vitaeras imperdiet urna eget eros eleifend
+            lucivamus feugiat nunc non ligula efficitur sitamet mollis justo.</p>
+        </div>
+        <div class="box">
+          <h3>Q: Have your sertification for your diet plans?</h3>
+          <p>Eget bibendum ligula suscipit vitaeras imperdiet urna eget eros eleifend
+            lucivamus feugiat nunc non ligula efficitur sitamet mollis justo.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="info">
+          <h2>Contact Information</h2>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              2177 Shearwood Forest , NH 03801
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              +180-123-4567
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              info@dietcoach.com
+            </li>
+          </ul>
+          <div class="social-icons">
+            <ul>
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-google-plus"></i></li>
+              <li><i class="fab fa-pinterest"></i></li>
+              <li><i class="fab fa-linkedin"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">service</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="#">Diet plans</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h2>Contact Us</h2>
+          <form>
+            <div class="input-field">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="input-field">
+              <input type="email" placeholder="email">
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Phone">
+            </div>
+            <div class="input-field">
+              <textarea placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="subfooter text-center mt-4 mb-2">
+        <p>
+          © 2019 - The Nutrition Diet Coach. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
